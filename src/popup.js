@@ -32,9 +32,26 @@ document.addEventListener("DOMContentLoaded", () => {
     const description = fields.description.value;
     const difficulty = fields.difficulty.value.trim();
 
-    if (!questionName || !code) {
-      alert("Please fill in both question name and code.");
+    const existingWarning = document.getElementById("input-warning");
+    if (
+      !questionName ||
+      !code ||
+      !commitMessage ||
+      !difficulty ||
+      !description
+    ) {
+      if (!existingWarning) {
+        const warningBox = document.createElement("div");
+        warningBox.id = "input-warning";
+        warningBox.textContent = "⚠️ Please fill in all fields.";
+        warningBox.style.color = "red";
+        warningBox.style.marginTop = "10px";
+        document.body.insertBefore(warningBox, pushBtn);
+        setTimeout(() => warningBox.remove(), 1000);
+      }
       return;
+    } else if (existingWarning) {
+      existingWarning.remove();
     }
 
     chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
