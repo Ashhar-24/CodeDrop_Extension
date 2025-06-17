@@ -36,8 +36,8 @@ This project includes **two separate manifest files**:
 ### 1. 📦 Clone the Repository
 
 ```bash
-git clone https://github.com/<your-username>/gfg-to-github-extension.git
-cd gfg-to-github-extension
+git clone https://github.com/Ashhar-24/gfgToGithub_Extension.git
+cd gfgToGithub_Extension
 ```
 
 ### 2. ✏️ Update GitHub Configuration
@@ -52,6 +52,7 @@ const GITHUB_TOKEN = "your-personal-access-token";
 ```
 
 ### 🧾 How to Generate a GitHub Token:
+
 1. Go to: https://github.com/settings/tokens
 
 2. Click "Generate new token (classic)"
@@ -70,7 +71,7 @@ const GITHUB_TOKEN = "your-personal-access-token";
 
 1. Open `chrome://extensions`
 
-2.Enable Developer Mode
+2. Enable Developer Mode
 
 3. Click "Load unpacked"
 
@@ -102,4 +103,5 @@ Pull requests are welcome! For major changes, please open an issue first.
 
 # 🌐 Author
 
-Md Ashhar
+**Md Ashhar**  
+[🔗 LinkedIn](https://www.linkedin.com/in/md-ashhar/) • [💻 GitHub](https://github.com/Ashhar-24) • [🌐 Portfolio](https://parichay-2-0.vercel.app)
