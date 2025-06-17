@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "GFG To GitHub",
+  "version": "1.0",
+  "description": "Push GFG C++ submissions to GitHub manually.",
+  "permissions": ["activeTab", "scripting", "tabs"],
+  "host_permissions": ["https://practice.geeksforgeeks.org/*"],
+  "action": {
+    "default_popup": "/src/popup.html",
+    "default_title": "GFG To GitHub Popup",
+    "default_icon": "/assets/logos.png"
+  },
+  "icons": {
+    "16": "assets/logos.png",
+    "48": "assets/logos.png",
+    "128": "assets/logos.png"
+  },
+  "background": {
+    "service_worker": "/src/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.geeksforgeeks.org/*"],
+      "js": ["/src/content.js"]
+    }
+  ]
+}
