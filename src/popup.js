@@ -100,19 +100,45 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if (message.action === "push_success") {
-      ["questionName", "code", "commitMessage", "description", "difficulty"].forEach(key => {
+      [
+        "questionName",
+        "code",
+        "commitMessage",
+        "description",
+        "difficulty",
+      ].forEach((key) => {
         localStorage.removeItem(`gfg_${key}`);
       });
 
       document.body.innerHTML = `
-        <p><b>✅ Code pushed successfully!</b></p>
-        <p>🔗 <a href="${message.fileUrl}" target="_blank">${message.fileUrl}</a></p>
-        <button id="copyLink">📋 Copy Link</button>
-      `;
+    <div style="font-family: sans-serif; padding: 15px;">
+      <p><b>✅ Code pushed successfully!</b></p>
+      <p>🔗 <a href="${message.fileUrl}" target="_blank" style="color: #1a0dab; text-decoration: underline;">${message.fileUrl}</a></p>
+      <button id="copyLink" 
+      class = "bg-indigo-600 hover:bg-indigo-700 text-white font-semibold text-sm py-2 rounded mt-2 transition duration-200"
+      >📋 Copy Link</button>
+      <div id="copiedMsg" style="
+        display: none;
+        color: lightgreen;
+        font-size: 10px;
+        margin-top: 5px;
+      ">✔️ Link copied!</div>
+    </div>
+  `;
 
-      document.getElementById("copyLink").addEventListener("click", () => {
+      const copyBtn = document.getElementById("copyLink");
+      const copiedMsg = document.getElementById("copiedMsg");
+
+      copyBtn.addEventListener("mouseenter", () => {
+        copyBtn.style.cursor = "pointer";
+      });
+
+      copyBtn.addEventListener("click", () => {
         navigator.clipboard.writeText(message.fileUrl).then(() => {
-          alert("GitHub file link copied!");
+          copiedMsg.style.display = "block";
+          setTimeout(() => {
+            copiedMsg.style.display = "none";
+          }, 2000);
         });
       });
     }
