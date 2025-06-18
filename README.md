@@ -3,7 +3,7 @@
 This is a personal browser extension that helps you push your **GeeksforGeeks C++ submissions** directly to your GitHub repository with custom commit messages, approach notes, and difficulty level.
 
 <p align="center">
-  <img src="assets/gfgToGithub.png" alt="Extension Icon" width = "500"/>
+  <img src="assets/logos.png" alt="Extension Icon" width = "500"/>
 </p>
 
 ---
