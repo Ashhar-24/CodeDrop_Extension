@@ -47,7 +47,7 @@ Navigate to `/src/background.js` and update the following constants with your ow
 
 ```js
 const GITHUB_USERNAME = "your-username";
-const GITHUB_REPO = "your-repo-name";
+const GITHUB_REPO = "your-repo-name";  // the repo which will store all the code files
 const GITHUB_TOKEN = "your-personal-access-token";
 
 ```
