@@ -52,6 +52,9 @@ const GITHUB_TOKEN = "your-personal-access-token";
 
 ```
 
+---
+
+
 ### 🧾 How to Generate a GitHub Token:
 
 1. Go to: https://github.com/settings/tokens
