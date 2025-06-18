@@ -3,7 +3,7 @@
 **CodeDrop** is a personal browser extension that helps you push your **C++ code submissions** directly to your GitHub repository — from **GeeksforGeeks**, **LeetCode**, or *any coding platform* — with custom commit messages, difficulty level, and approach notes.
 
 <p align="center">
-  <img src="assets/gfgToGithub.png" alt="Extension Icon" width="500"/>
+  <img src="assets/logos.png" alt="Extension Icon" width="500"/>
 </p>
 
 ---
