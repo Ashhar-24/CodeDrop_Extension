@@ -1,33 +1,34 @@
-# 🚀 GFG to GitHub Extension
+# 🚀 CodeDrop – Push Code to GitHub from Any Website
 
-This is a personal browser extension that helps you push your **GeeksforGeeks C++ submissions** directly to your GitHub repository with custom commit messages, approach notes, and difficulty level.
+**CodeDrop** is a personal browser extension that helps you push your **C++ code submissions** directly to your GitHub repository — from **GeeksforGeeks**, **LeetCode**, or *any coding platform* — with custom commit messages, difficulty level, and approach notes.
 
 <p align="center">
-  <img src="assets/logos.png" alt="Extension Icon" width = "500"/>
+  <img src="assets/gfgToGithub.png" alt="Extension Icon" width="500"/>
 </p>
 
 ---
 
 ## 🧠 What It Does
 
-- Manually push your GFG code submissions to GitHub from a popup UI.
-- Add metadata like question name, difficulty, approach notes, and commit message.
-- Creates `.cpp` files automatically with structured headers.
-- Works with **Chrome** and **Firefox**.
+- Push your code submissions to GitHub via a simple popup UI.
+- Automatically captures the active tab’s URL (no scraping needed).
+- Add metadata: question name, difficulty, commit message, and your approach.
+- Generates `.cpp` files with a clean, structured header.
+- Works on both **Chrome** and **Firefox**.
 
 ---
 
-## ⚠️ Important: Choose Your Browser
+## ⚙️ Supported Browsers
 
-This project includes **two separate manifest files**:
+CodeDrop comes with **two separate manifest files**:
 
-- `manifest.chrome.json` → for Google Chrome
-- `manifest.firefox.json` → for Mozilla Firefox
+- `manifest.chrome.json` → for **Google Chrome**
+- `manifest.firefox.json` → for **Mozilla Firefox**
 
 **Before using the extension**:
 
-- ✅ If you're using **Chrome**, **rename `manifest.chrome.json` to `manifest.json`** and delete the other.
-- ✅ If you're using **Firefox**, **rename `manifest.firefox.json` to `manifest.json`** and delete the other.
+- ✅ For **Chrome**: Rename `manifest.chrome.json` to `manifest.json`
+- ✅ For **Firefox**: Rename `manifest.firefox.json` to `manifest.json`
 
 ---
 
@@ -36,8 +37,8 @@ This project includes **two separate manifest files**:
 ### 1. 📦 Clone the Repository
 
 ```bash
-git clone https://github.com/Ashhar-24/gfgToGithub_Extension.git
-cd gfgToGithub_Extension
+git clone https://github.com/Ashhar-24/codedrop-extension.git
+cd codedrop-extension
 ```
 
 ### 2. ✏️ Update GitHub Configuration
