@@ -37,8 +37,8 @@ CodeDrop comes with **two separate manifest files**:
 ### 1. 📦 Clone the Repository
 
 ```bash
-git clone https://github.com/Ashhar-24/codedrop-extension.git
-cd codedrop-extension
+git clone https://github.com/Ashhar-24/CodeDrop_Extension.git
+cd CodeDrop_Extension
 ```
 
 ### 2. ✏️ Update GitHub Configuration
