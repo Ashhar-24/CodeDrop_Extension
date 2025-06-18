@@ -1,12 +1,12 @@
 {
   "manifest_version": 2,
-  "name": "GFG To GitHub",
+  "name": "CodeDrop",
   "version": "1.0",
-  "description": "Push GFG C++ submissions to GitHub manually.",
+  "description": "Push any C++ code to GitHub seamlessly.",
   "permissions": ["activeTab", "tabs", "https://practice.geeksforgeeks.org/"],
   "browser_action": {
     "default_popup": "src/popup.html",
-    "default_title": "GFG To GitHub Popup",
+    "default_title": "CodeDrop Popup",
     "default_icon": "/assets/logos.png"
   },
   "icons": {
